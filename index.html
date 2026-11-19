@@ -1,0 +1,1698 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>笔盒在线永久入口 - 官方品牌站,创意影像内容生态</title>
+<meta name="description" content="笔盒在线永久入口官方网站，专注于创意影像与文具生活领域的高品质内容平台，汇聚原创创作者、品牌故事与精品内容，打造值得信赖的内容生态社区。">
+<meta name="keywords" content="笔盒在线永久入口,笔盒,官方网站,创意影像,内容社区,原创创作者">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Crect x='14' y='24' width='36' height='20' rx='4' fill='%23ffb347'/%3E%3Crect x='18' y='20' width='6' height='8' rx='2' fill='%23ffffff'/%3E%3Crect x='48' y='28' width='6' height='10' rx='2' fill='%23ffffff' opacity='0.85'/%3E%3Ccircle cx='32' cy='34' r='4' fill='%231f3a5f'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bx-ink:#1f3a5f;
+  --bx-deep:#12233b;
+  --bx-accent:#ff8a3d;
+  --bx-accent-soft:#ffb347;
+  --bx-mint:#2fbf9f;
+  --bx-paper:#fdfaf5;
+  --bx-line:#e3dcd2;
+  --bx-text:#2b2f36;
+  --bx-muted:#6c7480;
+  --bx-card:#ffffff;
+  --bx-shadow:0 10px 30px rgba(31,58,95,.10);
+  --bx-radius:16px;
+  --bx-nav-h:64px;
+  --bx-ann-h:42px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--bx-nav-h) + var(--bx-ann-h) + 12px);}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--bx-paper);
+  color:var(--bx-text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+input{font-family:inherit;}
+
+/* ========== 吸顶容器 ========== */
+.bx-sticky-wrap{position:sticky;top:0;z-index:100;}
+.bx-announce{
+  background:linear-gradient(90deg,var(--bx-deep),var(--bx-ink) 60%,#2c4f7c);
+  color:#eaf1fb;font-size:13.5px;height:var(--bx-ann-h);
+  display:flex;align-items:center;overflow:hidden;
+  letter-spacing:.2px;
+}
+.bx-announce-inner{
+  max-width:1200px;margin:0 auto;padding:0 20px;width:100%;
+  display:flex;align-items:center;gap:14px;white-space:nowrap;
+  overflow:hidden;
+}
+.bx-announce-badge{
+  background:var(--bx-accent);color:#1e1305;font-weight:700;font-size:12px;
+  padding:2px 9px;border-radius:20px;flex-shrink:0;
+}
+.bx-announce-list{
+  display:flex;gap:14px;animation:bx-marquee 26s linear infinite;
+}
+.bx-announce-list:hover{animation-play-state:paused;}
+.bx-announce-list span{white-space:nowrap;opacity:.94;}
+.bx-announce-list span::before{content:"·";margin-right:14px;color:var(--bx-accent-soft);}
+@keyframes bx-marquee{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-50%);}
+}
+
+/* ========== 页头 ========== */
+.bx-header{
+  background:rgba(253,250,245,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--bx-line);
+  height:var(--bx-nav-h);
+}
+.bx-header-inner{
+  max-width:1200px;margin:0 auto;padding:0 20px;height:100%;
+  display:flex;align-items:center;gap:22px;
+}
+.bx-logo{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.bx-logo-mark{
+  width:38px;height:38px;border-radius:11px;flex-shrink:0;
+  background:linear-gradient(140deg,var(--bx-ink),#2c4f7c);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--bx-accent-soft);font-weight:800;font-size:17px;
+  box-shadow:0 4px 12px rgba(31,58,95,.25);
+}
+.bx-logo-text{display:flex;flex-direction:column;line-height:1.2;}
+.bx-logo-text b{font-size:16.5px;color:var(--bx-ink);letter-spacing:.5px;}
+.bx-logo-text small{font-size:10.5px;color:var(--bx-muted);letter-spacing:1.5px;}
+.bx-nav{display:flex;gap:4px;margin-left:8px;}
+.bx-nav a{
+  font-size:14.5px;color:#3c4350;padding:7px 13px;border-radius:9px;
+  transition:.22s;white-space:nowrap;
+}
+.bx-nav a:hover{background:rgba(255,138,61,.13);color:var(--bx-ink);}
+.bx-header-tools{margin-left:auto;display:flex;align-items:center;gap:10px;}
+.bx-search{
+  display:flex;align-items:center;background:#fff;
+  border:1.5px solid var(--bx-line);border-radius:24px;
+  padding:4px 4px 4px 14px;transition:.25s;
+}
+.bx-search:focus-within{border-color:var(--bx-accent);box-shadow:0 0 0 4px rgba(255,138,61,.12);}
+.bx-search input{
+  border:none;outline:none;background:transparent;width:170px;
+  font-size:13.5px;color:var(--bx-text);padding:4px 0;
+}
+.bx-search input::placeholder{color:#a7aeb8;}
+.bx-search button{
+  background:var(--bx-ink);color:#fff;border-radius:20px;
+  padding:6px 15px;font-size:13px;transition:.22s;
+}
+.bx-search button:hover{background:var(--bx-accent);color:#221200;}
+.bx-cta{
+  background:linear-gradient(135deg,var(--bx-accent),var(--bx-accent-soft));
+  color:#241300;font-weight:700;font-size:13.5px;
+  padding:9px 18px;border-radius:22px;white-space:nowrap;
+  box-shadow:0 6px 16px rgba(255,138,61,.32);transition:.25s;
+}
+.bx-cta:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(255,138,61,.42);}
+.bx-burger{display:none;flex-direction:column;gap:5px;padding:8px;}
+.bx-burger span{width:22px;height:2.5px;background:var(--bx-ink);border-radius:2px;transition:.25s;}
+
+.bx-search-feedback{
+  position:absolute;top:calc(var(--bx-ann-h) + var(--bx-nav-h) + 8px);
+  right:20px;background:#fff;border:1px solid var(--bx-line);border-radius:12px;
+  box-shadow:var(--bx-shadow);padding:10px 16px;font-size:13px;
+  color:var(--bx-ink);opacity:0;pointer-events:none;transition:.25s;z-index:120;
+}
+.bx-search-feedback.bx-show{opacity:1;pointer-events:auto;}
+
+/* ========== 通用容器 ========== */
+.bx-section{max-width:1200px;margin:0 auto;padding:74px 20px 0;}
+.bx-section-head{margin-bottom:36px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+.bx-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;font-weight:700;letter-spacing:2px;
+  color:var(--bx-accent);text-transform:uppercase;margin-bottom:10px;
+}
+.bx-eyebrow::before{content:"";width:22px;height:2px;background:var(--bx-accent);border-radius:2px;}
+.bx-h2{font-size:30px;line-height:1.3;color:var(--bx-ink);font-weight:800;letter-spacing:.3px;}
+.bx-sub{color:var(--bx-muted);font-size:14.5px;margin-top:8px;max-width:560px;}
+.bx-link-more{
+  font-size:14px;font-weight:700;color:var(--bx-ink);display:inline-flex;align-items:center;gap:6px;
+  border-bottom:2px solid var(--bx-accent);padding-bottom:3px;transition:.22s;white-space:nowrap;
+}
+.bx-link-more:hover{color:var(--bx-accent);}
+
+/* ========== 首屏 ========== */
+.bx-hero{
+  max-width:1200px;margin:0 auto;padding:56px 20px 0;
+  display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;
+}
+.bx-hero-copy .bx-badge-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;}
+.bx-chip{
+  font-size:12.5px;padding:5px 13px;border-radius:20px;font-weight:600;
+  background:rgba(47,191,159,.13);color:#1d7a66;border:1px solid rgba(47,191,159,.3);
+}
+.bx-chip.bx-chip-warm{background:rgba(255,138,61,.13);color:#b35a13;border-color:rgba(255,138,61,.32);}
+.bx-h1{
+  font-size:52px;line-height:1.14;color:var(--bx-ink);font-weight:900;
+  letter-spacing:-.5px;margin-bottom:18px;
+}
+.bx-h1 em{font-style:normal;color:var(--bx-accent);position:relative;}
+.bx-hero-lead{font-size:16.5px;color:#444c59;margin-bottom:14px;font-weight:500;}
+.bx-hero-desc{font-size:15px;color:var(--bx-muted);margin-bottom:26px;}
+.bx-hero-desc strong{color:var(--bx-ink);}
+.bx-hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px;}
+.bx-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 26px;border-radius:26px;font-size:15px;font-weight:700;transition:.25s;
+}
+.bx-btn-primary{
+  background:linear-gradient(135deg,var(--bx-ink),#2c4f7c);color:#fff;
+  box-shadow:0 10px 24px rgba(31,58,95,.28);
+}
+.bx-btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(31,58,95,.38);}
+.bx-btn-ghost{border:1.8px solid var(--bx-ink);color:var(--bx-ink);background:#fff;}
+.bx-btn-ghost:hover{background:var(--bx-ink);color:#fff;transform:translateY(-3px);}
+.bx-hero-stats{display:flex;gap:34px;flex-wrap:wrap;}
+.bx-stat b{display:block;font-size:30px;color:var(--bx-ink);font-weight:900;line-height:1.1;}
+.bx-stat b i{font-style:normal;font-size:17px;color:var(--bx-accent);margin-left:2px;}
+.bx-stat span{font-size:13px;color:var(--bx-muted);}
+
+.bx-hero-visual{position:relative;}
+.bx-hero-main{
+  border-radius:22px;overflow:hidden;box-shadow:var(--bx-shadow);position:relative;
+  aspect-ratio:16/11;background:#0f1e30;
+}
+.bx-hero-main img{width:100%;height:100%;object-fit:cover;}
+.bx-hero-tag{
+  position:absolute;left:16px;top:16px;background:rgba(18,35,59,.82);
+  color:#fff;font-size:12px;padding:5px 12px;border-radius:16px;backdrop-filter:blur(6px);
+  letter-spacing:1px;
+}
+.bx-hero-play{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+}
+.bx-hero-play span{
+  width:66px;height:66px;border-radius:50%;
+  background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 26px rgba(0,0,0,.3);transition:.25s;
+}
+.bx-hero-play span::after{
+  content:"";border-left:18px solid var(--bx-ink);
+  border-top:11px solid transparent;border-bottom:11px solid transparent;
+  margin-left:5px;
+}
+.bx-hero-main:hover .bx-hero-play span{transform:scale(1.1);background:var(--bx-accent);}
+.bx-hero-main:hover .bx-hero-play span::after{border-left-color:#241300;}
+.bx-hero-float{
+  position:absolute;right:-14px;bottom:-22px;background:#fff;border-radius:16px;
+  padding:14px 18px;box-shadow:var(--bx-shadow);display:flex;align-items:center;gap:12px;
+  border:1px solid var(--bx-line);max-width:250px;
+}
+.bx-hero-float .bx-avatar{width:40px;height:40px;font-size:15px;}
+.bx-hero-float b{display:block;font-size:13.5px;color:var(--bx-ink);}
+.bx-hero-float small{font-size:11.5px;color:var(--bx-muted);}
+
+/* ========== 关键词深度解析 ========== */
+.bx-about{
+  max-width:1200px;margin:78px auto 0;padding:0 20px;
+}
+.bx-about-card{
+  background:linear-gradient(160deg,#fff,#fbf6ee 70%);
+  border:1px solid var(--bx-line);border-radius:24px;
+  padding:48px 46px;box-shadow:0 14px 40px rgba(31,58,95,.06);
+  position:relative;overflow:hidden;
+}
+.bx-about-card::after{
+  content:"";position:absolute;right:-90px;top:-90px;width:260px;height:260px;
+  background:radial-gradient(circle,rgba(255,138,61,.18),transparent 70%);border-radius:50%;
+}
+.bx-about-card .bx-h2{margin-bottom:6px;}
+.bx-about-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:26px;position:relative;z-index:1;}
+.bx-about-grid p{font-size:14.8px;color:#4a525f;margin-bottom:16px;text-align:justify;}
+.bx-about-grid p strong{color:var(--bx-ink);}
+.bx-about-quote{
+  grid-column:1/-1;border-left:4px solid var(--bx-accent);
+  background:rgba(255,138,61,.07);padding:18px 24px;border-radius:0 12px 12px 0;
+  font-size:15px;color:var(--bx-ink);font-weight:600;
+}
+
+/* ========== 焦点视频 ========== */
+.bx-focus-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:24px;}
+.bx-focus-main{
+  border-radius:20px;overflow:hidden;position:relative;background:#0f1e30;
+  box-shadow:var(--bx-shadow);min-height:380px;
+}
+.bx-focus-main img{width:100%;height:100%;object-fit:cover;min-height:380px;transition:.4s;}
+.bx-focus-main:hover img{transform:scale(1.04);}
+.bx-focus-overlay{
+  position:absolute;inset:0;background:linear-gradient(to top,rgba(10,20,34,.92) 8%,rgba(10,20,34,.25) 55%,transparent);
+  display:flex;flex-direction:column;justify-content:flex-end;padding:28px;color:#fff;
+}
+.bx-focus-overlay .bx-tagline{font-size:12px;letter-spacing:2px;color:var(--bx-accent-soft);font-weight:700;margin-bottom:8px;}
+.bx-focus-overlay h3{font-size:23px;line-height:1.35;margin-bottom:10px;font-weight:800;}
+.bx-focus-overlay p{font-size:13.5px;color:#c8d2e0;margin-bottom:16px;}
+.bx-focus-meta{display:flex;align-items:center;gap:14px;font-size:12.5px;color:#a9b6c8;flex-wrap:wrap;}
+.bx-focus-meta .bx-dot{width:4px;height:4px;border-radius:50%;background:#7d8b9e;}
+.bx-focus-side{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.bx-focus-card{
+  background:#fff;border:1px solid var(--bx-line);border-radius:16px;overflow:hidden;
+  transition:.3s;display:flex;flex-direction:column;
+}
+.bx-focus-card:hover{transform:translateY(-4px);box-shadow:var(--bx-shadow);border-color:rgba(255,138,61,.4);}
+.bx-focus-thumb{aspect-ratio:16/9;overflow:hidden;position:relative;background:#dfe6ef;}
+.bx-focus-thumb img{width:100%;height:100%;object-fit:cover;transition:.35s;}
+.bx-focus-card:hover .bx-focus-thumb img{transform:scale(1.06);}
+.bx-focus-thumb .bx-mini-tag{
+  position:absolute;left:8px;bottom:8px;background:rgba(18,35,59,.8);color:#fff;
+  font-size:10.5px;padding:2px 8px;border-radius:10px;backdrop-filter:blur(4px);
+}
+.bx-focus-body{padding:13px 14px 15px;flex:1;display:flex;flex-direction:column;}
+.bx-focus-body h4{font-size:14px;line-height:1.45;color:var(--bx-ink);font-weight:700;margin-bottom:8px;flex:1;}
+.bx-focus-body .bx-mini-meta{font-size:11.5px;color:var(--bx-muted);display:flex;justify-content:space-between;align-items:center;}
+
+/* ========== 热门视频流 ========== */
+.bx-filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px;}
+.bx-filter-btn{
+  font-size:13px;padding:7px 16px;border-radius:20px;border:1.4px solid var(--bx-line);
+  color:#525a68;background:#fff;transition:.22s;font-weight:600;
+}
+.bx-filter-btn:hover{border-color:var(--bx-accent);color:var(--bx-accent);}
+.bx-filter-btn.bx-active{background:var(--bx-ink);color:#fff;border-color:var(--bx-ink);}
+.bx-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.bx-video-card{
+  background:#fff;border:1px solid var(--bx-line);border-radius:18px;overflow:hidden;
+  transition:.3s;display:flex;flex-direction:column;
+}
+.bx-video-card:hover{transform:translateY(-5px);box-shadow:var(--bx-shadow);border-color:rgba(255,138,61,.35);}
+.bx-video-cover{aspect-ratio:16/9;position:relative;overflow:hidden;background:#dfe6ef;}
+.bx-video-cover img{width:100%;height:100%;object-fit:cover;transition:.4s;}
+.bx-video-card:hover .bx-video-cover img{transform:scale(1.05);}
+.bx-cover-badge{
+  position:absolute;top:9px;left:9px;background:rgba(18,35,59,.82);color:#fff;
+  font-size:10.5px;padding:3px 9px;border-radius:12px;backdrop-filter:blur(4px);letter-spacing:.5px;
+}
+.bx-cover-dur{
+  position:absolute;right:9px;bottom:9px;background:rgba(0,0,0,.68);color:#fff;
+  font-size:11px;padding:2px 7px;border-radius:6px;letter-spacing:.5px;
+}
+.bx-video-body{padding:16px 17px 18px;display:flex;flex-direction:column;flex:1;}
+.bx-video-body h3{font-size:16px;line-height:1.42;color:var(--bx-ink);font-weight:700;margin-bottom:8px;}
+.bx-video-body .bx-video-desc{font-size:13px;color:var(--bx-muted);margin-bottom:12px;flex:1;line-height:1.6;}
+.bx-video-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:13px;}
+.bx-video-tags span{
+  font-size:11px;padding:2px 9px;border-radius:10px;background:rgba(31,58,95,.07);color:#4a586c;
+}
+.bx-video-foot{display:flex;align-items:center;gap:9px;padding-top:12px;border-top:1px dashed var(--bx-line);}
+.bx-avatar{
+  width:32px;height:32px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:13px;font-weight:700;
+}
+.bx-video-author{font-size:12.5px;color:#3c4350;font-weight:600;}
+.bx-video-stats{font-size:11px;color:var(--bx-muted);}
+.bx-video-actions{margin-left:auto;display:flex;gap:6px;}
+.bx-icon-btn{
+  display:inline-flex;align-items:center;gap:4px;font-size:11.5px;color:var(--bx-muted);
+  padding:5px 9px;border-radius:16px;border:1px solid var(--bx-line);transition:.22s;
+}
+.bx-icon-btn:hover{border-color:var(--bx-accent);color:var(--bx-accent);}
+.bx-icon-btn.bx-liked{color:#e0554a;border-color:rgba(224,85,74,.4);background:rgba(224,85,74,.07);}
+.bx-icon-btn.bx-saved{color:var(--bx-accent);border-color:rgba(255,138,61,.45);background:rgba(255,138,61,.08);}
+
+/* ========== 专题企划 ========== */
+.bx-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.bx-topic-card{
+  border-radius:18px;overflow:hidden;position:relative;min-height:250px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:24px;color:#fff;box-shadow:var(--bx-shadow);transition:.3s;
+}
+.bx-topic-card:hover{transform:translateY(-5px);}
+.bx-topic-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+.bx-topic-card::after{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to top,rgba(10,22,38,.92) 10%,rgba(10,22,38,.18) 70%);
+}
+.bx-topic-inner{position:relative;z-index:2;}
+.bx-topic-state{
+  display:inline-block;font-size:11px;padding:3px 10px;border-radius:12px;
+  background:var(--bx-accent);color:#241300;font-weight:700;margin-bottom:10px;
+}
+.bx-topic-state.bx-state-done{background:rgba(255,255,255,.2);color:#fff;backdrop-filter:blur(4px);}
+.bx-topic-card h3{font-size:18px;line-height:1.4;margin-bottom:8px;font-weight:800;}
+.bx-topic-card p{font-size:12.8px;color:#c3cfdd;line-height:1.6;}
+
+/* ========== 创作者矩阵 ========== */
+.bx-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.bx-creator-card{
+  background:#fff;border:1px solid var(--bx-line);border-radius:18px;padding:26px 20px 22px;
+  text-align:center;transition:.3s;position:relative;overflow:hidden;
+}
+.bx-creator-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--bx-accent),var(--bx-mint));opacity:0;transition:.3s;
+}
+.bx-creator-card:hover{transform:translateY(-5px);box-shadow:var(--bx-shadow);}
+.bx-creator-card:hover::before{opacity:1;}
+.bx-creator-avatar{
+  width:74px;height:74px;border-radius:26px;margin:0 auto 14px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:28px;font-weight:800;color:#fff;
+  box-shadow:0 8px 20px rgba(31,58,95,.2);
+}
+.bx-creator-card h3{font-size:16px;color:var(--bx-ink);font-weight:800;margin-bottom:4px;}
+.bx-creator-field{font-size:12px;color:var(--bx-accent);font-weight:700;margin-bottom:10px;}
+.bx-creator-bio{font-size:12.8px;color:var(--bx-muted);line-height:1.65;margin-bottom:14px;min-height:56px;}
+.bx-creator-nums{display:flex;justify-content:center;gap:18px;padding-top:12px;border-top:1px dashed var(--bx-line);}
+.bx-creator-nums div{font-size:11px;color:var(--bx-muted);}
+.bx-creator-nums b{display:block;font-size:15px;color:var(--bx-ink);}
+
+/* ========== 故事随笔 ========== */
+.bx-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.bx-story-card{
+  background:#fff;border:1px solid var(--bx-line);border-radius:18px;
+  padding:28px 26px;transition:.3s;display:flex;flex-direction:column;
+}
+.bx-story-card:hover{box-shadow:var(--bx-shadow);transform:translateY(-4px);}
+.bx-story-date{font-size:12px;color:var(--bx-accent);font-weight:700;letter-spacing:1px;margin-bottom:12px;}
+.bx-story-card h3{font-size:17px;color:var(--bx-ink);line-height:1.45;margin-bottom:12px;font-weight:800;}
+.bx-story-card p{font-size:13.5px;color:#5a6270;line-height:1.75;flex:1;margin-bottom:16px;}
+.bx-story-by{font-size:12px;color:var(--bx-muted);display:flex;align-items:center;gap:8px;}
+
+/* ========== 数据榜单 ========== */
+.bx-rank-wrap{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.bx-rank-panel{
+  background:#fff;border:1px solid var(--bx-line);border-radius:18px;padding:26px 26px 18px;
+}
+.bx-rank-panel h3{
+  font-size:17px;color:var(--bx-ink);font-weight:800;margin-bottom:6px;
+  display:flex;align-items:center;gap:8px;
+}
+.bx-rank-panel h3::before{content:"";width:4px;height:16px;background:var(--bx-accent);border-radius:2px;}
+.bx-rank-sub{font-size:12.5px;color:var(--bx-muted);margin-bottom:16px;}
+.bx-rank-item{
+  display:flex;align-items:center;gap:13px;padding:11px 0;border-bottom:1px solid #f1ece4;
+}
+.bx-rank-item:last-child{border-bottom:none;}
+.bx-rank-no{
+  width:26px;height:26px;border-radius:8px;background:#f2eee7;color:#8a8377;
+  font-size:12.5px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.bx-rank-item:nth-child(3) .bx-rank-no{background:var(--bx-accent);color:#241300;}
+.bx-rank-item:nth-child(4) .bx-rank-no{background:#2c4f7c;color:#fff;}
+.bx-rank-item:nth-child(5) .bx-rank-no{background:#c9a34e;color:#fff;}
+.bx-rank-title{font-size:13.5px;color:#3a4250;flex:1;line-height:1.45;}
+.bx-rank-title b{display:block;color:var(--bx-ink);font-weight:700;}
+.bx-rank-title small{font-size:11px;color:var(--bx-muted);}
+.bx-rank-score{font-size:12.5px;font-weight:800;color:var(--bx-accent);white-space:nowrap;}
+
+/* ========== 用户评价 ========== */
+.bx-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.bx-review-card{
+  background:#fff;border:1px solid var(--bx-line);border-radius:18px;padding:22px 22px 20px;
+  position:relative;transition:.3s;
+}
+.bx-review-card:hover{box-shadow:var(--bx-shadow);transform:translateY(-3px);}
+.bx-review-card::before{
+  content:"“";position:absolute;top:6px;right:18px;font-size:52px;
+  color:rgba(255,138,61,.2);font-family:Georgia,serif;line-height:1;
+}
+.bx-review-head{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.bx-review-head b{font-size:13.5px;color:var(--bx-ink);display:block;}
+.bx-review-head small{font-size:11px;color:var(--bx-muted);}
+.bx-review-text{font-size:13.5px;color:#525a67;line-height:1.75;margin-bottom:14px;}
+.bx-stars{color:#e8b53a;font-size:13px;letter-spacing:2px;}
+
+/* ========== 企业动态 ========== */
+.bx-news-list{display:flex;flex-direction:column;gap:14px;}
+.bx-news-item{
+  display:flex;gap:20px;align-items:center;background:#fff;border:1px solid var(--bx-line);
+  border-radius:16px;padding:20px 24px;transition:.28s;
+}
+.bx-news-item:hover{border-color:rgba(255,138,61,.45);box-shadow:var(--bx-shadow);transform:translateX(4px);}
+.bx-news-date{
+  flex-shrink:0;background:rgba(31,58,95,.06);border-radius:12px;
+  width:68px;padding:10px 0;text-align:center;
+}
+.bx-news-date b{display:block;font-size:19px;color:var(--bx-ink);font-weight:900;line-height:1.1;}
+.bx-news-date span{font-size:11px;color:var(--bx-muted);}
+.bx-news-content{flex:1;}
+.bx-news-content h3{font-size:15.5px;color:var(--bx-ink);font-weight:700;margin-bottom:5px;}
+.bx-news-content p{font-size:13px;color:var(--bx-muted);line-height:1.6;}
+.bx-news-cat{
+  flex-shrink:0;font-size:11.5px;padding:4px 12px;border-radius:14px;
+  background:rgba(47,191,159,.12);color:#1d7a66;font-weight:700;
+}
+
+/* ========== 合作品牌 ========== */
+.bx-partner-strip{
+  background:linear-gradient(135deg,#12233b,#1f3a5f 70%);
+  border-radius:22px;padding:38px 36px;display:flex;align-items:center;gap:36px;flex-wrap:wrap;
+  box-shadow:var(--bx-shadow);
+}
+.bx-partner-intro{color:#fff;min-width:200px;}
+.bx-partner-intro b{display:block;font-size:19px;font-weight:800;margin-bottom:6px;}
+.bx-partner-intro span{font-size:13px;color:#9fb0c6;line-height:1.6;}
+.bx-partner-logos{display:flex;gap:12px;flex-wrap:wrap;flex:1;justify-content:flex-end;}
+.bx-partner-logo{
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);
+  color:#dfe8f4;font-size:13px;font-weight:700;padding:10px 20px;border-radius:12px;
+  letter-spacing:.5px;transition:.25s;backdrop-filter:blur(4px);
+}
+.bx-partner-logo:hover{background:rgba(255,138,61,.18);border-color:var(--bx-accent);color:#fff;}
+
+/* ========== FAQ ========== */
+.bx-faq-list{display:flex;flex-direction:column;gap:12px;max-width:900px;margin:0 auto;}
+.bx-faq-item{
+  background:#fff;border:1px solid var(--bx-line);border-radius:14px;overflow:hidden;transition:.25s;
+}
+.bx-faq-item[open]{border-color:rgba(255,138,61,.45);box-shadow:0 6px 20px rgba(31,58,95,.07);}
+.bx-faq-item summary{
+  cursor:pointer;padding:18px 22px;font-size:15px;color:var(--bx-ink);font-weight:700;
+  list-style:none;display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.bx-faq-item summary::-webkit-details-marker{display:none;}
+.bx-faq-item summary::after{
+  content:"+";font-size:20px;color:var(--bx-accent);font-weight:400;transition:.25s;flex-shrink:0;
+}
+.bx-faq-item[open] summary::after{transform:rotate(45deg);}
+.bx-faq-item .bx-faq-answer{
+  padding:0 22px 20px;font-size:13.8px;color:#5a6270;line-height:1.8;
+}
+
+/* ========== 联系/投稿 ========== */
+.bx-contact{
+  background:linear-gradient(150deg,#fff,#fbf4ea);
+  border:1px solid var(--bx-line);border-radius:24px;
+  padding:46px 46px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;
+}
+.bx-contact h2{font-size:27px;color:var(--bx-ink);font-weight:800;margin-bottom:14px;}
+.bx-contact p{font-size:14.5px;color:#5a6270;line-height:1.8;margin-bottom:20px;}
+.bx-contact-actions{display:flex;gap:12px;flex-wrap:wrap;}
+.bx-contact-actions button{
+  padding:12px 24px;border-radius:24px;font-size:14px;font-weight:700;transition:.25s;
+}
+.bx-btn-send{background:var(--bx-ink);color:#fff;box-shadow:0 8px 20px rgba(31,58,95,.24);}
+.bx-btn-send:hover{transform:translateY(-3px);background:#2c4f7c;}
+.bx-btn-share{border:1.8px solid var(--bx-ink);color:var(--bx-ink);background:#fff;}
+.bx-btn-share:hover{background:var(--bx-ink);color:#fff;}
+.bx-contact-info{display:flex;flex-direction:column;gap:14px;}
+.bx-contact-row{
+  display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--bx-line);
+  border-radius:14px;padding:14px 18px;
+}
+.bx-contact-icon{
+  width:38px;height:38px;border-radius:11px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(255,138,61,.14);font-size:17px;
+}
+.bx-contact-row b{display:block;font-size:13.5px;color:var(--bx-ink);}
+.bx-contact-row span{font-size:12px;color:var(--bx-muted);}
+
+/* ========== 页脚 ========== */
+.bx-footer{
+  margin-top:80px;background:var(--bx-deep);color:#b7c4d6;padding:56px 20px 30px;
+}
+.bx-footer-inner{max-width:1200px;margin:0 auto;}
+.bx-footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.1);}
+.bx-footer-brand .bx-logo-text b{color:#fff;font-size:18px;}
+.bx-footer-brand .bx-logo-text small{color:#7f90a6;}
+.bx-footer-brand p{font-size:13px;line-height:1.8;margin-top:16px;color:#8fa0b6;max-width:320px;}
+.bx-footer-col h4{font-size:13.5px;color:#fff;font-weight:700;margin-bottom:14px;letter-spacing:.5px;}
+.bx-footer-col a{display:block;font-size:13px;color:#8fa0b6;margin-bottom:9px;transition:.2s;}
+.bx-footer-col a:hover{color:var(--bx-accent-soft);}
+.bx-footer-bottom{padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;color:#71829a;}
+.bx-footer-bottom a{color:#8fa0b6;}
+.bx-footer-bottom a:hover{color:var(--bx-accent-soft);}
+
+/* ========== 回到顶部 ========== */
+.bx-to-top{
+  position:fixed;right:24px;bottom:28px;width:46px;height:46px;border-radius:50%;
+  background:var(--bx-ink);color:#fff;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 22px rgba(31,58,95,.35);opacity:0;pointer-events:none;transition:.3s;z-index:90;
+  font-size:18px;
+}
+.bx-to-top.bx-show{opacity:1;pointer-events:auto;}
+.bx-to-top:hover{background:var(--bx-accent);color:#241300;transform:translateY(-3px);}
+
+/* ========== 弹窗 ========== */
+.bx-modal-mask{
+  position:fixed;inset:0;background:rgba(11,21,34,.62);backdrop-filter:blur(4px);
+  display:flex;align-items:center;justify-content:center;padding:20px;
+  opacity:0;pointer-events:none;transition:.28s;z-index:200;
+}
+.bx-modal-mask.bx-show{opacity:1;pointer-events:auto;}
+.bx-modal{
+  background:#fff;border-radius:20px;max-width:480px;width:100%;
+  padding:32px 32px 28px;box-shadow:0 24px 60px rgba(0,0,0,.3);
+  transform:translateY(16px);transition:.28s;
+}
+.bx-modal-mask.bx-show .bx-modal{transform:translateY(0);}
+.bx-modal h3{font-size:20px;color:var(--bx-ink);font-weight:800;margin-bottom:8px;}
+.bx-modal p{font-size:13.8px;color:var(--bx-muted);line-height:1.75;margin-bottom:20px;}
+.bx-modal-form{display:flex;flex-direction:column;gap:12px;}
+.bx-modal-form input,.bx-modal-form textarea{
+  border:1.5px solid var(--bx-line);border-radius:11px;padding:11px 14px;
+  font-size:14px;color:var(--bx-text);outline:none;transition:.22s;resize:vertical;
+}
+.bx-modal-form input:focus,.bx-modal-form textarea:focus{border-color:var(--bx-accent);box-shadow:0 0 0 4px rgba(255,138,61,.12);}
+.bx-modal-submit{
+  background:var(--bx-ink);color:#fff;padding:12px;border-radius:11px;
+  font-size:14.5px;font-weight:700;transition:.22s;margin-top:4px;
+}
+.bx-modal-submit:hover{background:var(--bx-accent);color:#241300;}
+.bx-modal-close{
+  position:absolute;top:16px;right:18px;font-size:22px;color:#a7aeb8;transition:.2s;
+}
+.bx-modal-close:hover{color:var(--bx-ink);}
+
+/* ========== Toast ========== */
+.bx-toast{
+  position:fixed;left:50%;bottom:44px;transform:translate(-50%,20px);
+  background:rgba(18,35,59,.94);color:#fff;font-size:13.5px;padding:11px 22px;
+  border-radius:26px;box-shadow:0 10px 26px rgba(0,0,0,.28);
+  opacity:0;pointer-events:none;transition:.3s;z-index:300;white-space:nowrap;
+}
+.bx-toast.bx-show{opacity:1;transform:translate(-50%,0);}
+
+/* ========== 移动端 ========== */
+@media(max-width:1024px){
+  .bx-hero{grid-template-columns:1fr;gap:38px;}
+  .bx-focus-grid{grid-template-columns:1fr;}
+  .bx-video-grid{grid-template-columns:repeat(2,1fr);}
+  .bx-topic-grid{grid-template-columns:repeat(2,1fr);}
+  .bx-creator-grid{grid-template-columns:repeat(2,1fr);}
+  .bx-story-grid{grid-template-columns:1fr;}
+  .bx-rank-wrap{grid-template-columns:1fr;}
+  .bx-review-grid{grid-template-columns:repeat(2,1fr);}
+  .bx-about-grid{grid-template-columns:1fr;}
+  .bx-contact{grid-template-columns:1fr;padding:34px 28px;}
+  .bx-footer-top{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:768px){
+  .bx-nav{
+    display:none;position:absolute;top:calc(var(--bx-ann-h) + var(--bx-nav-h));
+    left:0;right:0;background:#fff;border-bottom:1px solid var(--bx-line);
+    flex-direction:column;padding:12px 20px;gap:2px;box-shadow:0 12px 28px rgba(31,58,95,.12);
+  }
+  .bx-nav.bx-open{display:flex;}
+  .bx-nav a{padding:11px 12px;}
+  .bx-burger{display:flex;}
+  .bx-search{display:none;}
+  .bx-cta{display:none;}
+  .bx-header-tools{margin-left:auto;gap:0;}
+  .bx-h1{font-size:36px;}
+  .bx-h2{font-size:24px;}
+  .bx-hero-stats{gap:24px;}
+  .bx-video-grid{grid-template-columns:1fr;}
+  .bx-topic-grid{grid-template-columns:1fr;}
+  .bx-creator-grid{grid-template-columns:1fr;}
+  .bx-review-grid{grid-template-columns:1fr;}
+  .bx-focus-side{grid-template-columns:1fr;}
+  .bx-about-card{padding:30px 24px;}
+  .bx-footer-top{grid-template-columns:1fr;}
+  .bx-partner-strip{padding:28px 24px;gap:20px;}
+  .bx-partner-logos{justify-content:flex-start;}
+  .bx-news-item{flex-wrap:wrap;gap:12px;}
+  .bx-to-top{right:16px;bottom:20px;width:42px;height:42px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶：公告条 + 页头 -->
+<div class="bx-sticky-wrap">
+  <div class="bx-announce">
+    <div class="bx-announce-inner">
+      <span class="bx-announce-badge">官方发布</span>
+      <div class="bx-announce-list">
+        <span>11月18日 ·「笔盒手帐实验室」新专题上线，6位创作者联合投稿</span>
+        <span>11月16日 · 秋冬文具影像大赛报名通道正式开启</span>
+        <span>11月12日 · 笔盒创作者激励计划第二期细则更新</span>
+        <span>11月18日 ·「笔盒手帐实验室」新专题上线，6位创作者联合投稿</span>
+        <span>11月16日 · 秋冬文具影像大赛报名通道正式开启</span>
+        <span>11月12日 · 笔盒创作者激励计划第二期细则更新</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="bx-header">
+    <div class="bx-header-inner">
+      <a href="#bx-home" class="bx-logo">
+        <div class="bx-logo-mark">笔</div>
+        <div class="bx-logo-text">
+          <b>笔盒</b>
+          <small>BIHE STUDIO</small>
+        </div>
+      </a>
+      <nav class="bx-nav" id="bxNav">
+        <a href="#bx-home">首页</a>
+        <a href="#bx-about">品牌故事</a>
+        <a href="#bx-focus">焦点影像</a>
+        <a href="#bx-videos">热门内容</a>
+        <a href="#bx-topics">专题企划</a>
+        <a href="#bx-creators">创作者</a>
+        <a href="#bx-news">企业动态</a>
+        <a href="#bx-faq">帮助</a>
+      </nav>
+      <div class="bx-header-tools">
+        <div class="bx-search">
+          <input type="text" id="bxSearchInput" placeholder="搜索影像、创作者、专题" aria-label="站内搜索">
+          <button type="button" id="bxSearchBtn">搜索</button>
+        </div>
+        <button type="button" class="bx-cta" id="bxSubmitBtn">投稿入口</button>
+        <button type="button" class="bx-burger" id="bxBurger" aria-label="展开菜单">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div class="bx-search-feedback" id="bxSearchFeedback"></div>
+
+<main>
+
+<!-- ========== 首屏 ========== -->
+<section class="bx-hero" id="bx-home">
+  <div class="bx-hero-copy">
+    <div class="bx-badge-row">
+      <span class="bx-chip">官方网站</span>
+      <span class="bx-chip bx-chip-warm">原创内容生态</span>
+      <span class="bx-chip">持续运营 1500 天</span>
+    </div>
+    <h1 class="bx-h1">笔盒在线永久入口</h1>
+    <p class="bx-hero-lead">一间关于笔、纸与影像的企业级创意工作室，也是一座持续生长的品牌内容社区。</p>
+    <p class="bx-hero-desc">
+      作为笔盒在线永久入口的<strong>官方网站</strong>，我们把书写、手帐、文具与影像表达汇聚在一起，
+      让每一支笔、每一个本子、每一段日常记录都拥有被认真看见的机会。这里是创作者与企业共同搭建的
+      <strong>高品质内容生态</strong>，也是用户首选的文具影像灵感入口。
+    </p>
+    <div class="bx-hero-btns">
+      <a href="#bx-focus" class="bx-btn bx-btn-primary">浏览焦点影像</a>
+      <a href="#bx-about" class="bx-btn bx-btn-ghost">了解品牌故事</a>
+    </div>
+    <div class="bx-hero-stats">
+      <div class="bx-stat"><b>12<i>万+</i></b><span>社区注册创作者</span></div>
+      <div class="bx-stat"><b>8600<i>+</i></b><span>原创影像作品</span></div>
+      <div class="bx-stat"><b>98.6<i>%</i></b><span>用户口碑好评率</span></div>
+    </div>
+  </div>
+
+  <div class="bx-hero-visual">
+    <div class="bx-hero-main">
+      <span class="bx-hero-tag">本期主推 · 手帐影像计划</span>
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 440'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2312233b'/%3E%3Cstop offset='.55' stop-color='%232c4f7c'/%3E%3Cstop offset='1' stop-color='%231f3a5f'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ff8a3d'/%3E%3Cstop offset='1' stop-color='%23ffb347'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='440' fill='url(%23g1)'/%3E%3Ccircle cx='520' cy='90' r='130' fill='%232fbf9f' opacity='.16'/%3E%3Ccircle cx='96' cy='358' r='150' fill='%23ff8a3d' opacity='.12'/%3E%3Crect x='120' y='130' width='330' height='150' rx='16' fill='%23fdfaf5' opacity='.94'/%3E%3Crect x='120' y='130' width='330' height='34' rx='16' fill='%23ffb347'/%3E%3Crect x='146' y='196' width='180' height='9' rx='4.5' fill='%231f3a5f' opacity='.72'/%3E%3Crect x='146' y='218' width='240' height='9' rx='4.5' fill='%231f3a5f' opacity='.4'/%3E%3Crect x='146' y='240' width='130' height='9' rx='4.5' fill='%231f3a5f' opacity='.26'/%3E%3Crect x='400' y='196' width='6' height='104' rx='3' fill='%23ff8a3d'/%3E%3Crect x='96' y='330' width='240' height='14' rx='7' fill='%23fdfaf5' opacity='.24'/%3E%3Crect x='420' y='318' width='150' height='14' rx='7' fill='url(%23g2)' opacity='.85'/%3E%3Ccircle cx='540' cy='330' r='26' fill='none' stroke='%23ffb347' stroke-width='5' opacity='.7'/%3E%3C/svg%3E" alt="笔盒手帐影像计划主视觉插画">
+      <div class="bx-hero-play"><span></span></div>
+    </div>
+    <div class="bx-hero-float">
+      <div class="bx-avatar" style="background:linear-gradient(135deg,#ff8a3d,#ffb347);">林</div>
+      <div>
+        <b>林知夏 · 本期推荐</b>
+        <small>手帐影像 · 36 部原创作品</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 品牌故事 / 关键词解析 ========== -->
+<section class="bx-about" id="bx-about">
+  <div class="bx-about-card">
+    <span class="bx-eyebrow">BRAND STORY</span>
+    <h2 class="bx-h2">笔盒在线永久入口的品牌理念与内容定位</h2>
+    <div class="bx-about-grid">
+      <p>
+        <strong>笔盒在线永久入口</strong>并不是一个冷冰冰的导航页，而是一家真正在运营的文具影像品牌企业。
+        我们相信，书写与记录是人类最朴素也最有力量的表达方式。从 2019 年第一支手帐短片上线开始，
+        笔盒就把「让每一个普通人的笔尖被世界看见」写进了品牌使命。作为<strong>官方网站</strong>，
+        这里既承载品牌故事与官方发布，也承载社区创作者的日常记录与深度观察。
+      </p>
+      <p>
+        在笔盒的内容生态里，视频不是单向的展示，而是一场持续的对话。我们深耕文具与创意影像这一垂直领域，
+        以<strong>原创、正版、高清</strong>为基本标准，鼓励创作者围绕教程干货、深度测评、城市探索、
+        创作幕后、生活方式等题材持续产出。平台设有专题企划、创作者激励、作品墙与数据榜单，
+        让优质内容被更多人看见，也让品牌口碑在真实互动中自然沉淀。
+      </p>
+      <p>
+        笔盒在线永久入口的社区氛围强调<strong>真实、温暖、陪伴</strong>。我们不做夸张的流量竞赛，
+        而是耐心经营每一个细分兴趣：钢笔手感、纸品选择、胶带拼贴、墨水色彩、旅行手帐、亲子共写。
+        这些看似微小的主题，构成了笔盒多元而包容的内容生态。行业领先的审核机制与用户至上的服务原则，
+        让每一位来到笔盒的人都能放心浏览、安心分享。
+      </p>
+      <p>
+        作为一个持续运营的<strong>品牌平台</strong>，笔盒同时承担社会责任：我们联合文具企业与原创设计师，
+        推出公益共写计划，把闲置文具送到需要的孩子手中；我们举办每年一届的文具影像大赛，为新人提供
+        展示与成长的机会；我们也开放投稿与上传入口，让每一位用户都能成为内容生态的一部分。
+        笔盒在线永久入口，意味着无论何时回到这里，你都能找到属于自己的那一页纸、那一段影像。
+      </p>
+      <div class="bx-about-quote">
+        笔盒的定位很清晰：做文具与创意影像领域最值得信赖的官方网站之一，用匠心打磨内容，用创新连接品牌与用户，用陪伴见证每一次成长。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 焦点影像 ========== -->
+<section class="bx-section" id="bx-focus">
+  <div class="bx-section-head">
+    <div>
+      <span class="bx-eyebrow">FOCUS</span>
+      <h2 class="bx-h2">焦点影像 · 官方精选</h2>
+      <p class="bx-sub">由笔盒编辑团队与社区共同推选的精品内容，覆盖文具测评、手帐教程与创作幕后。</p>
+    </div>
+    <a href="#bx-videos" class="bx-link-more">查看更多内容 →</a>
+  </div>
+
+  <div class="bx-focus-grid">
+    <article class="bx-focus-main">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 440'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231a2e47'/%3E%3Cstop offset='1' stop-color='%233a5a80'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='440' fill='url(%23f1)'/%3E%3Crect x='70' y='90' width='200' height='280' rx='12' fill='%23fdfaf5' opacity='.9' transform='rotate(-8 170 230)'/%3E%3Crect x='300' y='70' width='200' height='280' rx='12' fill='%23ffe8cf' opacity='.9' transform='rotate(6 400 210)'/%3E%3Cpath d='M150 160 L200 190 L150 220' stroke='%23ff8a3d' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Cpath d='M360 150 L420 200 L370 260' stroke='%232fbf9f' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='560' cy='150' r='60' fill='none' stroke='%23ffb347' stroke-width='8' opacity='.8'/%3E%3Crect x='520' y='250' width='120' height='16' rx='8' fill='%23fdfaf5' opacity='.35'/%3E%3Crect x='520' y='278' width='82' height='16' rx='8' fill='%23fdfaf5' opacity='.22'/%3E%3C/svg%3E" alt="手帐创作者桌面特写与纸品配色影像封面">
+      <div class="bx-focus-overlay">
+        <span class="bx-tagline">深度专题 · 手帐影像计划</span>
+        <h3>一页纸的四季：六位创作者的手帐影像接力</h3>
+        <p>从春日的墨色到冬夜的胶带拼贴，笔盒联合六位原创创作者，用镜头记录一本手帐如何被时间慢慢填满。</p>
+        <div class="bx-focus-meta">
+          <span>笔盒官方编辑部</span><span class="bx-dot"></span>
+          <span>11月18日 更新</span><span class="bx-dot"></span>
+          <span>2.4万 次浏览</span>
+        </div>
+      </div>
+    </article>
+
+    <div class="bx-focus-side">
+      <article class="bx-focus-card">
+        <div class="bx-focus-thumb">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Cdefs%3E%3ClinearGradient id='f2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232fbf9f'/%3E%3Cstop offset='1' stop-color='%231a7f68'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='360' height='202' fill='url(%23f2)'/%3E%3Ccircle cx='300' cy='46' r='56' fill='%23ffffff' opacity='.14'/%3E%3Crect x='46' y='112' width='180' height='12' rx='6' fill='%23ffffff' opacity='.7'/%3E%3Crect x='46' y='136' width='120' height='12' rx='6' fill='%23ffffff' opacity='.4'/%3E%3Cpath d='M60 60 L120 90 L60 120' stroke='%23ffb347' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="钢笔墨水测评实拍配色封面">
+          <span class="bx-mini-tag">测评</span>
+        </div>
+        <div class="bx-focus-body">
+          <h4>12 支常用钢笔墨水横评：纸面表现与色彩稳定性</h4>
+          <div class="bx-mini-meta"><span>墨点实验室</span><span>1.1万 浏览</span></div>
+        </div>
+      </article>
+
+      <article class="bx-focus-card">
+        <div class="bx-focus-thumb">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Cdefs%3E%3ClinearGradient id='f3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffb347'/%3E%3Cstop offset='1' stop-color='%23ff7a2f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='360' height='202' fill='url(%23f3)'/%3E%3Crect x='40' y='40' width='130' height='130' rx='10' fill='%23fdfaf5' opacity='.85' transform='rotate(-6 105 105)'/%3E%3Crect x='190' y='52' width='130' height='130' rx='10' fill='%2312233b' opacity='.55' transform='rotate(8 255 117)'/%3E%3Ccircle cx='255' cy='117' r='26' fill='%23ffb347' opacity='.9'/%3E%3C/svg%3E" alt="胶带拼贴创作过程影像封面">
+          <span class="bx-mini-tag">教程</span>
+        </div>
+        <div class="bx-focus-body">
+          <h4>零基础拼贴入门：用三卷胶带做一页旅行手帐</h4>
+          <div class="bx-mini-meta"><span>苏禾手帐</span><span>9600 浏览</span></div>
+        </div>
+      </article>
+
+      <article class="bx-focus-card">
+        <div class="bx-focus-thumb">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Cdefs%3E%3ClinearGradient id='f4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235b6ea8'/%3E%3Cstop offset='1' stop-color='%2327304f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='360' height='202' fill='url(%23f4)'/%3E%3Crect x='44' y='120' width='272' height='30' rx='15' fill='%23ffffff' opacity='.16'/%3E%3Ccircle cx='92' cy='76' r='30' fill='%23ffb347' opacity='.85'/%3E%3Ccircle cx='270' cy='76' r='20' fill='%232fbf9f' opacity='.85'/%3E%3C/svg%3E" alt="城市文具店探访影像封面">
+          <span class="bx-mini-tag">城探</span>
+        </div>
+        <div class="bx-focus-body">
+          <h4>城市文具地图：藏在老街里的五家独立文具店</h4>
+          <div class="bx-mini-meta"><span>行走的笔袋</span><span>8300 浏览</span></div>
+        </div>
+      </article>
+
+      <article class="bx-focus-card">
+        <div class="bx-focus-thumb">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Cdefs%3E%3ClinearGradient id='f5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23d96d8a'/%3E%3Cstop offset='1' stop-color='%238e3b5a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='360' height='202' fill='url(%23f5)'/%3E%3Crect x='60' y='46' width='100' height='100' rx='50' fill='%23fdfaf5' opacity='.85'/%3E%3Cpath d='M190 140 Q220 80 250 130 T310 120' stroke='%23ffd9a8' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="亲子共写日常记录影像封面">
+          <span class="bx-mini-tag">日常</span>
+        </div>
+        <div class="bx-focus-body">
+          <h4>和孩子一起写交换日记：一百天后的意外收获</h4>
+          <div class="bx-mini-meta"><span>小满妈妈</span><span>1.6万 浏览</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 热门视频流 ========== -->
+<section class="bx-section" id="bx-videos">
+  <div class="bx-section-head">
+    <div>
+      <span class="bx-eyebrow">TRENDING</span>
+      <h2 class="bx-h2">热门内容 · 社区正在看</h2>
+      <p class="bx-sub">笔盒社区本周热度较高的原创影像，涵盖教程、测评、生活方式与人物访谈。</p>
+    </div>
+    <a href="#bx-topics" class="bx-link-more">进入专题 →</a>
+  </div>
+
+  <div class="bx-filter-bar" id="bxFilterBar">
+    <button type="button" class="bx-filter-btn bx-active" data-filter="all">全部</button>
+    <button type="button" class="bx-filter-btn" data-filter="教程">教程干货</button>
+    <button type="button" class="bx-filter-btn" data-filter="测评">深度测评</button>
+    <button type="button" class="bx-filter-btn" data-filter="生活">生活方式</button>
+    <button type="button" class="bx-filter-btn" data-filter="访谈">人物访谈</button>
+    <button type="button" class="bx-filter-btn" data-filter="幕后">创作幕后</button>
+  </div>
+
+  <div class="bx-video-grid" id="bxVideoGrid">
+
+    <article class="bx-video-card" data-cat="教程">
+      <div class="bx-video-cover">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Cdefs%3E%3ClinearGradient id='v1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffb347'/%3E%3Cstop offset='1' stop-color='%23e2622f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='360' height='202' fill='url(%23v1)'/%3E%3Crect x='40' y='46' width='150' height='110' rx='8' fill='%23fdfaf5' opacity='.9' transform='rotate(-5 115 101)'/%3E%3Cpath d='M210 150 L260 60 L300 150 Z' fill='%2312233b' opacity='.35'/%3E%3C/svg%3E" alt="纸胶带拼贴教学视频封面">
+        <span class="bx-cover-badge">教程干货</span>
+        <span class="bx-cover-dur">12:46</span>
+      </div>
+      <div class="bx-video-body">
+        <h3>手帐排版不翻车：三种通用版式一次讲透</h3>
+        <p class="bx-video-desc">从页面分区到视觉重心，用最基础的三栏法解决「写满就乱」的困扰，附可打印模板思路。</p>
+        <div class="bx-video-tags"><span>手帐</span><span>版式</span><span>新手友好</span></div>
+        <div class="bx-video-foot">
+          <div class="bx-avatar" style="background:linear-gradient(135deg,#ff8a3d,#ffb347);">苏</div>
+          <div>
+            <div class="bx-video-author">苏禾手帐</div>
+            <div class="bx-video-stats">86 部作品 · 3.2万 粉丝</div>
+          </div>
+          <div class="bx-video-actions">
+            <button type="button" class="bx-icon-btn bx-like-btn">♡ <span>1284</span></button>
+            <button type="button" class="bx-icon-btn bx-save-btn">☆ 收藏</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bx-video-card" data-cat="测评">
+      <div class="bx-video-cover">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Cdefs%3E%3ClinearGradient id='v2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232fbf9f'/%3E%3Cstop offset='1' stop-color='%2312493f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='360' height='202' fill='url(%23v2)'/%3E%3Ccircle cx='90' cy='60' r='34' fill='%23fdfaf5' opacity='.8'/%3E%3Crect x='150' y='90' width='160' height='70' rx='8' fill='%23ffb347' opacity='.85'/%3E%3Crect x='150' y='90' width='160' height='16' rx='8' fill='%2312233b' opacity='.5'/%3E%3C/svg%3E" alt="中性笔书写顺滑度测评视频封面">
+        <span class="bx-cover-badge">深度测评</span>
+        <span class="bx-cover-dur">18:03</span>
+      </div>
+      <div class="bx-video-body">
+        <h3>30 支中性笔连续书写测试：谁才是长时间写字的最优解</h3>
+        <p class="bx-video-desc">按出墨稳定性、握感、速干与断墨率四项维度打分，附完整数据表与不同纸张表现对比。</p>
+        <div class="bx-video-tags"><span>中性笔</span><span>横评</span><span>数据</span></div>
+        <div class="bx-video-foot">
+          <div class="bx-avatar" style="background:linear-gradient(135deg,#2fbf9f,#1a7f68);">墨</div>
+          <div>
+            <div class="bx-video-author">墨点实验室</div>
+            <div class="bx-video-stats">142 部作品 · 5.6万 粉丝</div>
+          </div>
+          <div class="bx-video-actions">
+            <button type="button" class="bx-icon-btn bx-like-btn">♡ <span>2071</span></button>
+            <button type="button" class="bx-icon-btn bx-save-btn">☆ 收藏</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bx-video-card" data-cat="生活">
+      <div class="bx-video-cover">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Cdefs%3E%3ClinearGradient id='v3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235b6ea8'/%3E%3Cstop offset='1' stop-color='%23222b46'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='360' height='202' fill='url(%23v3)'/%3E%3Ccircle cx='290' cy='40' r='70' fill='%23ffb347' opacity='.25'/%3E%3Crect x='40' y='120' width='190' height='10' rx='5' fill='%23fdfaf5' opacity='.6'/%3E%3Crect x='40' y='142' width='120' height='10' rx='5' fill='%23fdfaf5' opacity='.32'/%3E%3Ccircle cx='270' cy='130' r='26' fill='none' stroke='%232fbf9f' stroke-width='5'/%3E%3C/svg%3E" alt="夜晚书桌记录影像封面">
+        <span class="bx-cover-badge">生活方式</span>
+        <span class="bx-cover-dur">09:21</span>
+      </div>
+      <div class="bx-video-body">
+        <h3>睡前半小时：一个人的书桌与一天的收尾仪式</h3>
+        <p class="bx-video-desc">不用刻意自律，给自己留一段安静的记录时间。这支短片记录了普通工作日的夜晚片段。</p>
+        <div class="bx-video-tags"><span>日常记录</span><span>治愈</span><span>书桌</span></div>
+        <div class="bx-video-foot">
+          <div class="bx-avatar" style="background:linear-gradient(135deg,#5b6ea8,#27304f);">白</div>
+          <div>
+            <div class="bx-video-author">白纸夜行</div>
+            <div class="bx-video-stats">64 部作品 · 2.1万 粉丝</div>
+          </div>
+          <div class="bx-video-actions">
+            <button type="button" class="bx-icon-btn bx-like-btn">♡ <span>938</span></button>
+            <button type="button" class="bx-icon-btn bx-save-btn">☆ 收藏</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bx-video-card" data-cat="访谈">
+      <div class="bx-video-cover">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Cdefs%3E%3ClinearGradient id='v4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23d96d8a'/%3E%3Cstop offset='1' stop-color='%236e2c46'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='360' height='202' fill='url(%23v4)'/%3E%3Ccircle cx='110' cy='96' r='46' fill='%23fdfaf5' opacity='.9'/%3E%3Crect x='180' y='66' width='140' height='12' rx='6' fill='%23ffffff' opacity='.55'/%3E%3Crect x='180' y='94' width='110' height='12' rx='6' fill='%23ffffff' opacity='.35'/%3E%3Crect x='180' y='122' width='140' height='12' rx='6' fill='%23ffffff' opacity='.2'/%3E%3C/svg%3E" alt="独立设计师访谈视频封面">
+        <span class="bx-cover-badge">人物访谈</span>
+        <span class="bx-cover-dur">24:17</span>
+      </div>
+      <div class="bx-video-body">
+        <h3>对话独立文具设计师阿缇：一支笔从草图到量产的三年</h3>
+        <p class="bx-video-desc">聊设计、聊供应链、也聊坚持。我们把镜头搬进工作室，记录一个原创文具品牌的成长细节。</p>
+        <div class="bx-video-tags"><span>访谈</span><span>设计</span><span>品牌故事</span></div>
+        <div class="bx-video-foot">
+          <div class="bx-avatar" style="background:linear-gradient(135deg,#d96d8a,#8e3b5a);">笔</div>
+          <div>
+            <div class="bx-video-author">笔盒官方编辑部</div>
+            <div class="bx-video-stats">230 部作品 · 9.8万 粉丝</div>
+          </div>
+          <div class="bx-video-actions">
+            <button type="button" class="bx-icon-btn bx-like-btn">♡ <span>3420</span></button>
+            <button type="button" class="bx-icon-btn bx-save-btn">☆ 收藏</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bx-video-card" data-cat="幕后">
+      <div class="bx-video-cover">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Cdefs%3E%3ClinearGradient id='v5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233a5a80'/%3E%3Cstop offset='1' stop-color='%2312233b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='360' height='202' fill='url(%23v5)'/%3E%3Crect x='50' y='60' width='90' height='90' rx='12' fill='%23ffb347' opacity='.8'/%3E%3Crect x='160' y='80' width='150' height='60' rx='8' fill='%23fdfaf5' opacity='.7'/%3E%3Ccircle cx='300' cy='150' r='24' fill='%232fbf9f' opacity='.8'/%3E%3C/svg%3E" alt="影像拍摄布光幕后视频封面">
+        <span class="bx-cover-badge">创作幕后</span>
+        <span class="bx-cover-dur">15:32</span>
+      </div>
+      <div class="bx-video-body">
+        <h3>一支文具短片是怎么拍出来的：布光、机位与调色全记录</h3>
+        <p class="bx-video-desc">从分镜到成片，拆解我们拍摄手帐短片时的器材选择与低成本打光方案，适合个人创作者参考。</p>
+        <div class="bx-video-tags"><span>拍摄</span><span>剪辑</span><span>幕后</span></div>
+        <div class="bx-video-foot">
+          <div class="bx-avatar" style="background:linear-gradient(135deg,#3a5a80,#12233b);">影</div>
+          <div>
+            <div class="bx-video-author">光与纸影像组</div>
+            <div class="bx-video-stats">57 部作品 · 1.8万 粉丝</div>
+          </div>
+          <div class="bx-video-actions">
+            <button type="button" class="bx-icon-btn bx-like-btn">♡ <span>756</span></button>
+            <button type="button" class="bx-icon-btn bx-save-btn">☆ 收藏</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bx-video-card" data-cat="教程">
+      <div class="bx-video-cover">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 202'%3E%3Cdefs%3E%3ClinearGradient id='v6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffb347'/%3E%3Cstop offset='1' stop-color='%23b35a13'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='360' height='202' fill='url(%23v6)'/%3E%3Cpath d='M60 150 Q120 40 180 110 T300 80' stroke='%23fdfaf5' stroke-width='8' fill='none' stroke-linecap='round' opacity='.85'/%3E%3Ccircle cx='80' cy='60' r='20' fill='%2312233b' opacity='.4'/%3E%3C/svg%3E" alt="钢笔练字入门教程视频封面">
+        <span class="bx-cover-badge">教程干货</span>
+        <span class="bx-cover-dur">11:08</span>
+      </div>
+      <div class="bx-video-body">
+        <h3>成年人练字还来得及吗：从握笔到结构的四周计划</h3>
+        <p class="bx-video-desc">不追求书法比赛，只求字迹清晰好看。分享一份每天二十分钟、可执行的练字节奏与常见误区。</p>
+        <div class="bx-video-tags"><span>练字</span><span>钢笔</span><span>成长</span></div>
+        <div class="bx-video-foot">
+          <div class="bx-avatar" style="background:linear-gradient(135deg,#ffb347,#b35a13);">字</div>
+          <div>
+            <div class="bx-video-author">一笔一画</div>
+            <div class="bx-video-stats">98 部作品 · 3.9万 粉丝</div>
+          </div>
+          <div class="bx-video-actions">
+            <button type="button" class="bx-icon-btn bx-like-btn">♡ <span>1653</span></button>
+            <button type="button" class="bx-icon-btn bx-save-btn">☆ 收藏</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ========== 专题企划 ========== -->
+<section class="bx-section" id="bx-topics">
+  <div class="bx-section-head">
+    <div>
+      <span class="bx-eyebrow">CAMPAIGN</span>
+      <h2 class="bx-h2">专题企划 · 持续更新中</h2>
+      <p class="bx-sub">由笔盒官方发起的内容企划，联合创作者、品牌与用户共同完成，也欢迎你报名参与。</p>
+    </div>
+  </div>
+  <div class="bx-topic-grid">
+    <article class="bx-topic-card">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2312233b'/%3E%3Cstop offset='1' stop-color='%233a5a80'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23t1)'/%3E%3Crect x='60' y='70' width='120' height='150' rx='8' fill='%23ffb347' opacity='.85' transform='rotate(-6 120 145)'/%3E%3Crect x='210' y='90' width='120' height='150' rx='8' fill='%23fdfaf5' opacity='.8' transform='rotate(5 270 165)'/%3E%3C/svg%3E" alt="手帐实验室专题主视觉">
+      <div class="bx-topic-inner">
+        <span class="bx-topic-state">进行中 · 第 3 期</span>
+        <h3>笔盒手帐实验室</h3>
+        <p>六位创作者、三十天记录、一本共同完成的手帐。每周更新进度与幕后，欢迎围观与留言投票。</p>
+      </div>
+    </article>
+    <article class="bx-topic-card">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='t2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232fbf9f'/%3E%3Cstop offset='1' stop-color='%2312493f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23t2)'/%3E%3Ccircle cx='110' cy='90' r='46' fill='%23fdfaf5' opacity='.85'/%3E%3Crect x='180' y='120' width='160' height='24' rx='12' fill='%23ffffff' opacity='.5'/%3E%3Crect x='180' y='160' width='120' height='24' rx='12' fill='%23ffffff' opacity='.3'/%3E%3C/svg%3E" alt="文具影像大赛专题主视觉">
+      <div class="bx-topic-inner">
+        <span class="bx-topic-state">报名中 · 12月20日截止</span>
+        <h3>秋冬文具影像大赛</h3>
+        <p>面向所有创作者征集三分钟以内的文具主题短片，主题不限、风格自由，设新人奖与评审特别奖。</p>
+      </div>
+    </article>
+    <article class="bx-topic-card">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='t3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235b6ea8'/%3E%3Cstop offset='1' stop-color='%23222b46'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23t3)'/%3E%3Cpath d='M50 200 L140 100 L230 190 L320 90' stroke='%23ffb347' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='320' cy='90' r='16' fill='%23ffb347'/%3E%3C/svg%3E" alt="城市文具地图专题主视觉">
+      <div class="bx-topic-inner">
+        <span class="bx-topic-state bx-state-done">已完结 · 共 8 站</span>
+        <h3>城市文具地图</h3>
+        <p>八座城市、二十四家小店、八支探访短片。我们把独立文具店的真实样貌留在了影像里。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ========== 创作者矩阵 ========== -->
+<section class="bx-section" id="bx-creators">
+  <div class="bx-section-head">
+    <div>
+      <span class="bx-eyebrow">CREATORS</span>
+      <h2 class="bx-h2">创作者矩阵 · 内容生态中坚力量</h2>
+      <p class="bx-sub">他们是笔盒社区的核心创作者，用持续而真实的记录，让文具与影像被更多人理解。</p>
+    </div>
+    <a href="#bx-contact" class="bx-link-more">申请入驻 →</a>
+  </div>
+  <div class="bx-creator-grid">
+    <article class="bx-creator-card">
+      <div class="bx-creator-avatar" style="background:linear-gradient(135deg,#ff8a3d,#ffb347);">苏</div>
+      <h3>苏禾手帐</h3>
+      <div class="bx-creator-field">手帐版式 · 拼贴教程</div>
+      <p class="bx-creator-bio">擅长把复杂排版拆成可复制的小步骤，坚持更新五年，是许多新手的入门向导。</p>
+      <div class="bx-creator-nums">
+        <div><b>86</b>作品</div>
+        <div><b>3.2万</b>粉丝</div>
+      </div>
+    </article>
+    <article class="bx-creator-card">
+      <div class="bx-creator-avatar" style="background:linear-gradient(135deg,#2fbf9f,#1a7f68);">墨</div>
+      <h3>墨点实验室</h3>
+      <div class="bx-creator-field">钢笔墨水 · 深度测评</div>
+      <p class="bx-creator-bio">用数据说话的书写测评团队，每支笔都经过长时间实测，结论克制而可靠。</p>
+      <div class="bx-creator-nums">
+        <div><b>142</b>作品</div>
+        <div><b>5.6万</b>粉丝</div>
+      </div>
+    </article>
+    <article class="bx-creator-card">
+      <div class="bx-creator-avatar" style="background:linear-gradient(135deg,#5b6ea8,#27304f);">白</div>
+      <h3>白纸夜行</h3>
+      <div class="bx-creator-field">日常记录 · 治愈影像</div>
+      <p class="bx-creator-bio">拍书桌、拍夜晚、拍一个人的生活。节奏很慢，却让人愿意安静看完。</p>
+      <div class="bx-creator-nums">
+        <div><b>64</b>作品</div>
+        <div><b>2.1万</b>粉丝</div>
+      </div>
+    </article>
+    <article class="bx-creator-card">
+      <div class="bx-creator-avatar" style="background:linear-gradient(135deg,#d96d8a,#8e3b5a);">阿</div>
+      <h3>阿缇设计室</h3>
+      <div class="bx-creator-field">原创文具 · 品牌故事</div>
+      <p class="bx-creator-bio">独立文具设计师，作品从草图到量产全程自主完成，也乐于分享行业观察。</p>
+      <div class="bx-creator-nums">
+        <div><b>39</b>作品</div>
+        <div><b>1.4万</b>粉丝</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ========== 故事随笔 ========== -->
+<section class="bx-section" id="bx-stories">
+  <div class="bx-section-head">
+    <div>
+      <span class="bx-eyebrow">ESSAY</span>
+      <h2 class="bx-h2">故事随笔 · 影像背后的真实</h2>
+      <p class="bx-sub">视频之外，笔盒也保留文字的位置。这些文字来自创作者，也来自用户。</p>
+    </div>
+  </div>
+  <div class="bx-story-grid">
+    <article class="bx-story-card">
+      <div class="bx-story-date">2026 / 11 / 15</div>
+      <h3>我为什么坚持用纸笔记事</h3>
+      <p>用了三年电子笔记之后，我又回到了纸质本。不是效率问题，是那种笔尖划过纸面的声音，让我确定这一天真的发生过。手写很慢，但慢下来之后，想法反而更清楚了。</p>
+      <div class="bx-story-by"><div class="bx-avatar" style="width:26px;height:26px;font-size:11px;background:linear-gradient(135deg,#5b6ea8,#27304f);">白</div>白纸夜行</div>
+    </article>
+    <article class="bx-story-card">
+      <div class="bx-story-date">2026 / 11 / 09</div>
+      <h3>一支笔的三年：从草图到货架</h3>
+      <p>做文具设计最难的不是画外形，而是让外形在量产之后依然成立。握感、配重、笔夹的弹性、墨水的匹配，每一个参数都要反复打样。三年做一支笔，听起来很久，但我们觉得值得。</p>
+      <div class="bx-story-by"><div class="bx-avatar" style="width:26px;height:26px;font-size:11px;background:linear-gradient(135deg,#d96d8a,#8e3b5a);">阿</div>阿缇设计室</div>
+    </article>
+    <article class="bx-story-card">
+      <div class="bx-story-date">2026 / 10 / 28</div>
+      <h3>一百天的交换日记，改变了我们的对话方式</h3>
+      <p>孩子不愿意说的事，会写在本子上。我们从一天一句开始，慢慢写满一整本。那些歪歪扭扭的字和贴上去的小贴纸，比任何说教都更能让我理解他。谢谢笔盒，让我把这段记录留了下来。</p>
+      <div class="bx-story-by"><div class="bx-avatar" style="width:26px;height:26px;font-size:11px;background:linear-gradient(135deg,#ff8a3d,#ffb347);">满</div>小满妈妈</div>
+    </article>
+  </div>
+</section>
+
+<!-- ========== 数据榜单 ========== -->
+<section class="bx-section" id="bx-rank">
+  <div class="bx-section-head">
+    <div>
+      <span class="bx-eyebrow">RANKING</span>
+      <h2 class="bx-h2">内容榜单 · 本周热度</h2>
+      <p class="bx-sub">基于笔盒社区真实互动数据生成，每周一更新，供创作者参考内容方向。</p>
+    </div>
+  </div>
+  <div class="bx-rank-wrap">
+    <div class="bx-rank-panel">
+      <h3>热门影像榜</h3>
+      <p class="bx-rank-sub">统计周期：11月10日 — 11月16日</p>
+      <div class="bx-rank-item">
+        <div class="bx-rank-no">1</div>
+        <div class="bx-rank-title"><b>手帐排版不翻车：三种通用版式一次讲透</b><small>苏禾手帐 · 教程干货</small></div>
+        <div class="bx-rank-score">9.8 热度</div>
+      </div>
+      <div class="bx-rank-item">
+        <div class="bx-rank-no">2</div>
+        <div class="bx-rank-title"><b>30 支中性笔连续书写测试</b><small>墨点实验室 · 深度测评</small></div>
+        <div class="bx-rank-score">9.5 热度</div>
+      </div>
+      <div class="bx-rank-item">
+        <div class="bx-rank-no">3</div>
+        <div class="bx-rank-title"><b>对话独立文具设计师阿缇</b><small>笔盒官方编辑部 · 人物访谈</small></div>
+        <div class="bx-rank-score">9.2 热度</div>
+      </div>
+      <div class="bx-rank-item">
+        <div class="bx-rank-no">4</div>
+        <div class="bx-rank-title"><b>睡前半小时：一个人的书桌</b><small>白纸夜行 · 生活方式</small></div>
+        <div class="bx-rank-score">8.9 热度</div>
+      </div>
+      <div class="bx-rank-item">
+        <div class="bx-rank-no">5</div>
+        <div class="bx-rank-title"><b>一支文具短片的拍摄全记录</b><small>光与纸影像组 · 创作幕后</small></div>
+        <div class="bx-rank-score">8.6 热度</div>
+      </div>
+    </div>
+    <div class="bx-rank-panel">
+      <h3>新人创作者榜</h3>
+      <p class="bx-rank-sub">加入笔盒不超过 90 天的创作者</p>
+      <div class="bx-rank-item">
+        <div class="bx-rank-no">1</div>
+        <div class="bx-rank-title"><b>铅笔素描入门：从排线开始</b><small>纸上一只猫 · 教程干货</small></div>
+        <div class="bx-rank-score">新星</div>
+      </div>
+      <div class="bx-rank-item">
+        <div class="bx-rank-no">2</div>
+        <div class="bx-rank-title"><b>我的桌面整理与文具收纳</b><small>桌面研究所 · 生活方式</small></div>
+        <div class="bx-rank-score">新星</div>
+      </div>
+      <div class="bx-rank-item">
+        <div class="bx-rank-no">3</div>
+        <div class="bx-rank-title"><b>墨水在不同纸张上的显色实验</b><small>半杯蓝 · 深度测评</small></div>
+        <div class="bx-rank-score">新星</div>
+      </div>
+      <div class="bx-rank-item">
+        <div class="bx-rank-no">4</div>
+        <div class="bx-rank-title"><b>给旅行本配一页地图手绘</b><small>路上写字 · 城市探索</small></div>
+        <div class="bx-rank-score">新星</div>
+      </div>
+      <div class="bx-rank-item">
+        <div class="bx-rank-no">5</div>
+        <div class="bx-rank-title"><b>复古钢笔修复记录</b><small>老物件收藏 · 创作幕后</small></div>
+        <div class="bx-rank-score">新星</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 用户评价 ========== -->
+<section class="bx-section" id="bx-reviews">
+  <div class="bx-section-head">
+    <div>
+      <span class="bx-eyebrow">VOICES</span>
+      <h2 class="bx-h2">用户口碑 · 他们这样说</h2>
+      <p class="bx-sub">来自笔盒社区用户的真实反馈，是我们持续运营的最大动力。</p>
+    </div>
+  </div>
+  <div class="bx-review-grid">
+    <article class="bx-review-card">
+      <div class="bx-review-head">
+        <div class="bx-avatar" style="background:linear-gradient(135deg,#ff8a3d,#ffb347);">程</div>
+        <div><b>程一诺</b><small>手帐爱好者 · 加入 2 年</small></div>
+      </div>
+      <div class="bx-stars">★★★★★</div>
+      <p class="bx-review-text">最喜欢这里的教程板块，讲得细、不藏着掖着。跟着苏禾的版式系列练了两个月，现在写手帐终于不再挤成一团了。</p>
+    </article>
+    <article class="bx-review-card">
+      <div class="bx-review-head">
+        <div class="bx-avatar" style="background:linear-gradient(135deg,#2fbf9f,#1a7f68);">周</div>
+        <div><b>周则明</b><small>钢笔玩家 · 加入 3 年</small></div>
+      </div>
+      <div class="bx-stars">★★★★★</div>
+      <p class="bx-review-text">测评数据做得扎实，不吹不黑。我在买笔之前习惯先来笔盒看看实测，少踩了很多坑，这点很值得信赖。</p>
+    </article>
+    <article class="bx-review-card">
+      <div class="bx-review-head">
+        <div class="bx-avatar" style="background:linear-gradient(135deg,#5b6ea8,#27304f);">顾</div>
+        <div><b>顾清和</b><small>影像创作者 · 加入 1 年</small></div>
+      </div>
+      <div class="bx-stars">★★★★☆</div>
+      <p class="bx-review-text">社区氛围挺好，评论区很少有人吵架。创作幕后那类内容对我帮助很大，希望以后能多一些剪辑思路的分享。</p>
+    </article>
+    <article class="bx-review-card">
+      <div class="bx-review-head">
+        <div class="bx-avatar" style="background:linear-gradient(135deg,#d96d8a,#8e3b5a);">林</div>
+        <div><b>林知夏</b><small>手帐创作者 · 加入 4 年</small></div>
+      </div>
+      <div class="bx-stars">★★★★★</div>
+      <p class="bx-review-text">从观众变成创作者的这几年，平台一直在给新人机会。专题企划的选题很用心，不是单纯堆流量。</p>
+    </article>
+    <article class="bx-review-card">
+      <div class="bx-review-head">
+        <div class="bx-avatar" style="background:linear-gradient(135deg,#ffb347,#b35a13);">吴</div>
+        <div><b>吴闻笛</b><small>设计学生 · 加入 8 个月</small></div>
+      </div>
+      <div class="bx-stars">★★★★★</div>
+      <p class="bx-review-text">阿缇的那期访谈我反复看了三遍。作为设计专业学生，能看到真实的量产流程和行业经验，非常珍贵。</p>
+    </article>
+    <article class="bx-review-card">
+      <div class="bx-review-head">
+        <div class="bx-avatar" style="background:linear-gradient(135deg,#3a5a80,#12233b);">郑</div>
+        <div><b>郑小满</b><small>亲子记录 · 加入 1 年半</small></div>
+      </div>
+      <div class="bx-stars">★★★★★</div>
+      <p class="bx-review-text">界面干净，没有乱七八糟的弹窗，带孩子一起看也很放心。交换日记那个系列让我和孩子的关系亲密了不少。</p>
+    </article>
+  </div>
+</section>
+
+<!-- ========== 企业动态 ========== -->
+<section class="bx-section" id="bx-news">
+  <div class="bx-section-head">
+    <div>
+      <span class="bx-eyebrow">NEWS</span>
+      <h2 class="bx-h2">企业动态 · 官方发布</h2>
+      <p class="bx-sub">笔盒品牌与平台的最新资讯、规则更新与活动公告，均以此处发布为准。</p>
+    </div>
+  </div>
+  <div class="bx-news-list">
+    <article class="bx-news-item">
+      <div class="bx-news-date"><b>18</b><span>11月</span></div>
+      <div class="bx-news-content">
+        <h3>「笔盒手帐实验室」第三期专题正式上线</h3>
+        <p>六位创作者联合参与，专题页面已开放，包含每周进度影像与共创手帐的高清花絮。</p>
+      </div>
+      <span class="bx-news-cat">专题上线</span>
+    </article>
+    <article class="bx-news-item">
+      <div class="bx-news-date"><b>16</b><span>11月</span></div>
+      <div class="bx-news-content">
+        <h3>秋冬文具影像大赛报名通道开启，截止 12 月 20 日</h3>
+        <p>面向所有创作者征集三分钟以内短片，报名与作品上传均通过官方网站投稿入口完成。</p>
+      </div>
+      <span class="bx-news-cat">活动报名</span>
+    </article>
+    <article class="bx-news-item">
+      <div class="bx-news-date"><b>12</b><span>11月</span></div>
+      <div class="bx-news-content">
+        <h3>创作者激励计划第二期细则更新</h3>
+        <p>新增新人扶持档位与季度评选机制，详细规则可在帮助中心查看，欢迎创作者了解。</p>
+      </div>
+      <span class="bx-news-cat">规则更新</span>
+    </article>
+    <article class="bx-news-item">
+      <div class="bx-news-date"><b>06</b><span>11月</span></div>
+      <div class="bx-news-content">
+        <h3>笔盒公益共写计划第三季完成文具捐赠</h3>
+        <p>联合多家合作品牌，向六所乡村学校捐赠文具与手帐本，相关记录影像已在社区发布。</p>
+      </div>
+      <span class="bx-news-cat">社会责任</span>
+    </article>
+    <article class="bx-news-item">
+      <div class="bx-news-date"><b>01</b><span>11月</span></div>
+      <div class="bx-news-content">
+        <h3>平台内容审核规则与创作者权益说明同步更新</h3>
+        <p>围绕原创保护与版权声明做了一次梳理，所有创作者可在投稿页面查看最新说明。</p>
+      </div>
+      <span class="bx-news-cat">官方发布</span>
+    </article>
+  </div>
+</section>
+
+<!-- ========== 合作品牌 ========== -->
+<section class="bx-section" id="bx-partners">
+  <div class="bx-partner-strip">
+    <div class="bx-partner-intro">
+      <b>合作品牌与伙伴</b>
+      <span>与我们一起，把书写的价值传递给更多人。</span>
+    </div>
+    <div class="bx-partner-logos">
+      <span class="bx-partner-logo">墨野文具</span>
+      <span class="bx-partner-logo">纸上造物</span>
+      <span class="bx-partner-logo">蓝屿纸品</span>
+      <span class="bx-partner-logo">白昼设计</span>
+      <span class="bx-partner-logo">拾页书店</span>
+      <span class="bx-partner-logo">一格胶带</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="bx-section" id="bx-faq">
+  <div class="bx-section-head">
+    <div>
+      <span class="bx-eyebrow">FAQ</span>
+      <h2 class="bx-h2">帮助中心 · 常见问题</h2>
+      <p class="bx-sub">关于账号、投稿、版权与内容的常见疑问，这里先给出答案。</p>
+    </div>
+  </div>
+  <div class="bx-faq-list">
+    <details class="bx-faq-item" open>
+      <summary>如何成为笔盒的创作者并发布内容？</summary>
+      <div class="bx-faq-answer">通过页面顶部的投稿入口提交创作者申请，填写擅长领域与代表作品链接。审核通常在五个工作日内完成，通过后即可在个人中心上传与发布原创影像，并参与专题企划与激励计划。</div>
+    </details>
+    <details class="bx-faq-item">
+      <summary>投稿的作品需要满足哪些基本要求？</summary>
+      <div class="bx-faq-answer">作品需为本人原创或已获得完整授权，画面清晰、声音完整，时长建议在三分钟内。涉及文具品牌测评时请如实标注来源，不得含有虚假宣传与侵权素材。官方鼓励真实、具体、有细节的表达。</div>
+    </details>
+    <details class="bx-faq-item">
+      <summary>笔盒对原创内容提供哪些保护？</summary>
+      <div class="bx-faq-answer">平台为正版内容提供原创标识与版权声明展示，并建立侵权投诉通道。收到有效投诉后，我们会在核实后处理相关作品，并保留创作者申诉的权利。持续运营的审核机制是内容生态的基础。</div>
+    </details>
+    <details class="bx-faq-item">
+      <summary>作品在专题企划中被选用，会有什么影响？</summary>
+      <div class="bx-faq-answer">入选专题的作品会获得官方推荐位与额外曝光，并有机会参与品牌合作项目。专题参与完全自愿，创作者可以选择是否接受推荐，也可以随时与编辑部沟通调整。</div>
+    </details>
+    <details class="bx-faq-item">
+      <summary>如何报名参与文具影像大赛？</summary>
+      <div class="bx-faq-answer">在活动页面点击报名按钮，填写基本信息并上传作品即可。报名与上传均在官方网站内完成，不收取任何费用。评选结果会在企业动态与活动页面同步公布。</div>
+    </details>
+    <details class="bx-faq-item">
+      <summary>可以下载或转载平台上的内容吗？</summary>
+      <div class="bx-faq-answer">平台上的原创作品版权归创作者所有。如需转载或用于商业用途，请先取得创作者与平台的书面授权。站内提供的下载功能仅用于创作者备份自己的作品，不构成对其他内容的授权。</div>
+    </details>
+    <details class="bx-faq-item">
+      <summary>遇到账号问题或内容异常如何反馈？</summary>
+      <div class="bx-faq-answer">可通过联系我们页面的反馈入口提交问题，或在工作日联系官方客服邮箱。请尽量提供具体链接与截图，方便我们快速定位与处理。</div>
+    </details>
+  </div>
+</section>
+
+<!-- ========== 联系 / 投稿 ========== -->
+<section class="bx-section" id="bx-contact">
+  <div class="bx-contact">
+    <div>
+      <h2>笔盒在线永久入口 · 欢迎联系与投稿</h2>
+      <p>
+        这里是笔盒的官方网站联系页。无论你是想投稿一部作品、申请成为创作者，还是希望与品牌展开合作，
+        都欢迎通过下方入口与我们沟通。我们坚持用户至上的原则，认真对待每一封来信与每一次投稿。
+      </p>
+      <div class="bx-contact-actions">
+        <button type="button" class="bx-btn bx-btn-send" id="bxContactSubmit">我要投稿</button>
+        <button type="button" class="bx-btn bx-btn-share" id="bxShareBtn">分享本站</button>
+      </div>
+    </div>
+    <div class="bx-contact-info">
+      <div class="bx-contact-row">
+        <div class="bx-contact-icon">✉</div>
+        <div><b>官方邮箱</b><span>hello@bihe-studio.cn</span></div>
+      </div>
+      <div class="bx-contact-row">
+        <div class="bx-contact-icon">✦</div>
+        <div><b>创作者合作</b><span>creator@bihe-studio.cn</span></div>
+      </div>
+      <div class="bx-contact-row">
+        <div class="bx-contact-icon">◷</div>
+        <div><b>工作时间</b><span>周一至周五 10:00 — 18:30</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========== 页脚 ========== -->
+<footer class="bx-footer">
+  <div class="bx-footer-inner">
+    <div class="bx-footer-top">
+      <div class="bx-footer-brand">
+        <div class="bx-logo">
+          <div class="bx-logo-mark">笔</div>
+          <div class="bx-logo-text">
+            <b>笔盒</b>
+            <small>BIHE STUDIO</small>
+          </div>
+        </div>
+        <p>笔盒在线永久入口官方网站，专注于文具与创意影像的内容品牌。我们持续运营原创内容生态，以匠心与创新连接创作者、品牌与用户。</p>
+      </div>
+      <div class="bx-footer-col">
+        <h4>内容导航</h4>
+        <a href="#bx-focus">焦点影像</a>
+        <a href="#bx-videos">热门内容</a>
+        <a href="#bx-topics">专题企划</a>
+        <a href="#bx-stories">故事随笔</a>
+      </div>
+      <div class="bx-footer-col">
+        <h4>关于笔盒</h4>
+        <a href="#bx-about">品牌故事</a>
+        <a href="#bx-creators">创作者矩阵</a>
+        <a href="#bx-news">企业动态</a>
+        <a href="#bx-partners">合作品牌</a>
+      </div>
+      <div class="bx-footer-col">
+        <h4>支持与帮助</h4>
+        <a href="#bx-faq">帮助中心</a>
+        <a href="#bx-contact">联系我们</a>
+        <a href="#bx-contact">投稿入口</a>
+        <a href="#bx-rank">内容榜单</a>
+      </div>
+    </div>
+    <div class="bx-footer-bottom">
+      <span>© 2026 笔盒在线永久入口 官方网站 · 版权所有 · 持续运营中</span>
+      <span>品牌备案号：沪ICP备2026011888号 · 内容均标注原创与来源</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="bx-to-top" id="bxToTop" aria-label="回到顶部">↑</button>
+
+<!-- ========== 投稿弹窗 ========== -->
+<div class="bx-modal-mask" id="bxSubmitModal">
+  <div class="bx-modal" style="position:relative;">
+    <button type="button" class="bx-modal-close" data-close="bxSubmitModal">×</button>
+    <h3>投稿入口</h3>
+    <p>填写基本信息，我们会在五个工作日内与你联系。请确保作品为原创，并附上可查看的作品链接。</p>
+    <form class="bx-modal-form" id="bxSubmitForm">
+      <input type="text" placeholder="你的昵称或创作者名称" required>
+      <input type="email" placeholder="联系邮箱" required>
+      <textarea rows="3" placeholder="作品简介与链接" required></textarea>
+      <button type="submit" class="bx-modal-submit">提交投稿</button>
+    </form>
+  </div>
+</div>
+
+<div class="bx-toast" id="bxToast"></div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ===== 移动端导航 ===== */
+  var burger = document.getElementById('bxBurger');
+  var nav = document.getElementById('bxNav');
+  if(burger){
+    burger.addEventListener('click', function(){
+      nav.classList.toggle('bx-open');
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ nav.classList.remove('bx-open'); });
+    });
+  }
+
+  /* ===== 搜索反馈 ===== */
+  var searchInput = document.getElementById('bxSearchInput');
+  var searchBtn = document.getElementById('bxSearchBtn');
+  var feedback = document.getElementById('bxSearchFeedback');
+  var feedbackTimer = null;
+
+  function showFeedback(msg){
+    feedback.textContent = msg;
+    feedback.classList.add('bx-show');
+    clearTimeout(feedbackTimer);
+    feedbackTimer = setTimeout(function(){
+      feedback.classList.remove('bx-show');
+    }, 2800);
+  }
+
+  function doSearch(){
+    var kw = (searchInput.value || '').trim();
+    if(!kw){
+      showFeedback('请输入关键词后再搜索，例如「手帐」「测评」');
+      return;
+    }
+    var cards = document.querySelectorAll('#bxVideoGrid .bx-video-card');
+    var count = 0;
+    cards.forEach(function(card){
+      var text = card.textContent;
+      if(text.indexOf(kw) !== -1){
+        card.style.display = '';
+        card.style.outline = '2px solid rgba(255,138,61,.55)';
+        card.style.outlineOffset = '-2px';
+        count++;
+      } else {
+        card.style.display = 'none';
+        card.style.outline = '';
+      }
+    });
+    if(count > 0){
+      showFeedback('找到 ' + count + ' 条与「' + kw + '」相关的影像内容');
+      document.getElementById('bx-videos').scrollIntoView({behavior:'smooth'});
+    } else {
+      showFeedback('暂未找到「' + kw + '」，已为你显示全部内容');
+      cards.forEach(function(card){ card.style.display=''; card.style.outline=''; });
+    }
+  }
+
+  if(searchBtn){ searchBtn.addEventListener('click', doSearch); }
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+  }
+
+  /* ===== 分类筛选 ===== */
+  var filterBar = document.getElementById('bxFilterBar');
+  if(filterBar){
+    filterBar.addEventListener('click', function(e){
+      var btn = e.target.closest('.bx-filter-btn');
+      if(!btn) return;
+      filterBar.querySelectorAll('.bx-filter-btn').forEach(function(b){
+        b.classList.remove('bx-active');
+      });
+      btn.classList.add('bx-active');
+      var cat = btn.getAttribute('data-filter');
+      document.querySelectorAll('#bxVideoGrid .bx-video-card').forEach(function(card){
+        card.style.outline = '';
+        if(cat === 'all' || card.getAttribute('data-cat') === cat){
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      showFeedback('已筛选：' + btn.textContent);
+    });
+  }
+
+  /* ===== 点赞与收藏 ===== */
+  document.querySelectorAll('.bx-like-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var span = btn.querySelector('span');
+      var num = parseInt(span.textContent, 10) || 0;
+      var liked = btn.classList.toggle('bx-liked');
+      span.textContent = liked ? num + 1 : Math.max(0, num - 1);
+      btn.firstChild.textContent = liked ? '♥ ' : '♡ ';
+    });
+  });
+
+  document.querySelectorAll('.bx-save-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('bx-saved');
+      btn.textContent = saved ? '★ 已收藏' : '☆ 收藏';
+      toast(saved ? '已加入你的收藏夹' : '已取消收藏');
+    });
+  });
+
+  /* ===== Toast ===== */
+  var toastEl = document.getElementById('bxToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('bx-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('bx-show');
+    }, 2400);
+  }
+
+  /* ===== 弹窗 ===== */
+  var submitModal = document.getElementById('bxSubmitModal');
+  var submitBtns = [
+    document.getElementById('bxSubmitBtn'),
+    document.getElementById('bxContactSubmit')
+  ];
+  function openModal(el){
+    if(!el) return;
+    el.classList.add('bx-show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(el){
+    if(!el) return;
+    el.classList.remove('bx-show');
+    document.body.style.overflow = '';
+  }
+  submitBtns.forEach(function(b){
+    if(b) b.addEventListener('click', function(){ openModal(submitModal); });
+  });
+  document.querySelectorAll('.bx-modal-close').forEach(function(b){
+    b.addEventListener('click', function(){
+      closeModal(document.getElementById(b.getAttribute('data-close')));
+    });
+  });
+  if(submitModal){
+    submitModal.addEventListener('click', function(e){
+      if(e.target === submitModal) closeModal(submitModal);
+    });
+  }
+
+  var submitForm = document.getElementById('bxSubmitForm');
+  if(submitForm){
+    submitForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeModal(submitModal);
+      submitForm.reset();
+      toast('投稿已提交，感谢你的信任，我们会尽快联系你');
+    });
+  }
+
+  /* ===== 分享 ===== */
+  var shareBtn = document.getElementById('bxShareBtn');
+  if(shareBtn){
+    shareBtn.addEventListener('click', function(){
+      var text = '笔盒在线永久入口官方网站，文具与创意影像的内容社区';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          toast('分享文案已复制，可粘贴到微信或微博');
+        }).catch(function(){
+          toast('可以分享给你的朋友：' + text);
+        });
+      } else {
+        toast('可以分享给你的朋友：' + text);
+      }
+    });
+  }
+
+  /* ===== 回到顶部 ===== */
+  var toTop = document.getElementById('bxToTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 480){
+      toTop.classList.add('bx-show');
+    } else {
+      toTop.classList.remove('bx-show');
+    }
+  }, {passive:true});
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ===== 数字滚动（首屏数据） ===== */
+  function animateStats(){
+    document.querySelectorAll('.bx-stat b').forEach(function(el){
+      var full = el.textContent;
+      var m = full.match(/([\d.]+)/);
+      if(!m) return;
+      var target = parseFloat(m[1]);
+      var suffix = full.replace(m[1], '');
+      var start = 0;
+      var dur = 900;
+      var t0 = null;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var val = target * (1 - Math.pow(1 - p, 3));
+        var display = target % 1 !== 0 ? val.toFixed(1) : Math.floor(val);
+        el.innerHTML = display + '<i>' + suffix.replace(/[<>]/g,'') + '</i>';
+        if(p < 1) requestAnimationFrame(step);
+        else el.innerHTML = full;
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  var heroStats = document.querySelector('.bx-hero-stats');
+  if(heroStats && 'IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          animateStats();
+          io.disconnect();
+        }
+      });
+    }, {threshold:0.4});
+    io.observe(heroStats);
+  }
+
+})();
+</script>
+
+</body>
+  </html>
